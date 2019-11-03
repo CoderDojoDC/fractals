@@ -13,4 +13,4 @@ Note: This page is viewable at [http://coderdojodc.com/fractals](http://coderdoj
 
 * [Maryland STEM Festival](https://marylandstemfestival.org)
 * [Fractal Project on Scratch](https://scratch.mit.edu/projects/341521071)
-* [Python code examples](https://github.com/CoderDojoDC/fractals/python/)
+* [Python code examples](https://github.com/CoderDojoDC/fractals/tree/master/python)
