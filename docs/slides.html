@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="lib/reveal/css/reset.css">
-  <link rel="stylesheet" href="lib/reveal/css/reveal.css">
+  <link rel="stylesheet" href="./lib/reveal/css/reset.css">
+  <link rel="stylesheet" href="./lib/reveal/css/reveal.css">
   <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -80,17 +80,17 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="lib/reveal/css/theme/fractals.css" id="theme">
+  <link rel="stylesheet" href="./lib/reveal/css/theme/fractals.css" id="theme">
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'lib/reveal/css/print/pdf.css' : 'lib/reveal/css/print/paper.css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? './lib/reveal/css/print/pdf.css' : './lib/reveal/css/print/paper.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
-  <script src="lib/reveal/lib/js/html5shiv.js"></script>
+  <script src="./lib/reveal/lib/js/html5shiv.js"></script>
   <![endif]-->
 </head>
 <body>
@@ -99,55 +99,98 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="title-slide">
   <h1 class="title">Fractals</h1>
-  <p class="subtitle">Coding them in Scratch and Python</p>
+  <p class="subtitle">Functions and Recusion in Scratch and Python</p>
 </section>
 
-<section id="section" class="slide level1">
-<h1></h1>
-<div class="left">
-<p>Slides go <strong>here</strong>.</p>
-</div>
-<div class="fragment">
-<hr />
-<p><em>Bonus tags here.</em></p>
-</div>
-</section>
-<section id="this-is-a-heading" class="slide level1">
-<h1>This is a heading!</h1>
-<p class="left">
-Some text here
-</p>
+<section id="welcome" class="slide level1">
+<h1>Welcome</h1>
 <div>
 <ul>
-<li class="fragment">increment1</li>
-<li class="fragment">increment2</li>
-<li class="fragment">increment3</li>
+<li class="fragment">Welcome to CoderDojoDC</li>
+<li class="fragment">Welcome to the Maryland STEM Festival</li>
 </ul>
 </div>
-<p class="left fragment">
-This is another bonus.
-</p>
 </section>
-<section id="slide-2" class="slide level1">
-<h1>Slide 2</h1>
-<p>Text goes here:</p>
+<section id="section" class="slide level1">
+<h1></h1>
+<p><img src="img/stemfestlogo.png" /></p>
+</section>
+<section id="what-are-fractals" class="slide level1">
+<h1>What are Fractals?</h1>
+<p>Fractals are shapes with some special characteristics:</p>
+<div>
 <ul>
-<li><em>word1</em>: definition</li>
-<li><em>word2</em>: definition</li>
+<li class="fragment">Fine Structure</li>
+<li class="fragment">Self-Similarity</li>
+<li class="fragment">Scaled Symmetry</li>
+<li class="fragment">Recursion</li>
 </ul>
+</div>
 </section>
-<section id="slide-3-with-code" class="slide level1">
-<h1>Slide 3: with Code</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># assignment</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>x <span class="op">=</span> <span class="st">&quot;Hello World&quot;</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># evaluation</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="bu">print</span>(x) </span></code></pre></div>
+<section id="building-a-fractal-1" class="slide level1">
+<h1>Building a Fractal (1)</h1>
+<p>To make a fractal, start with a basic shape or line</p>
+<p><img src="img/koch1.png" size="40%" /></p>
+</section>
+<section id="building-a-fractal-2" class="slide level1">
+<h1>Building a Fractal (2)</h1>
+<p>You then repeat the same line in each of the parts of the original</p>
+<p><img src="img/koch2.png" size="40%" /></p>
+</section>
+<section id="building-a-fractal-3" class="slide level1">
+<h1>Building a Fractal (3)</h1>
+<p>As you continue to repeat, or recurse downward, the shape becomes more intricate</p>
+<p><img src="img/koch3.png" size="40%" /></p>
+</section>
+<section id="programming-fractals" class="slide level1">
+<h1>Programming Fractals</h1>
+<p>In order to draw fractals with computers we use two things:</p>
+<div>
+<ul>
+<li class="fragment"><em>Functions</em>: Functions are like little recipes</li>
+<li class="fragment"><em>Recursion</em>: Recursion is when a function “calls” itself</li>
+</ul>
+</div>
+</section>
+<section id="a-fractal-in-scratch" class="slide level1">
+<h1>A Fractal in Scratch</h1>
+<p>To draw a fractal in Scratch, we can use the following:</p>
+<div>
+<ul>
+<li class="fragment">Pen Tool</li>
+<li class="fragment">Custom Blocks (functions)</li>
+<li class="fragment">Recursion (putting a custom block inside itself)</li>
+</ul>
+</div>
+</section>
+<section id="lets-try-it-out" class="slide level1">
+<h1>Let’s Try it Out!</h1>
+<p><a href="https://scratch.mit.edu/projects/341521071" target="new">A Fractal Project on the Scratch Website</a></p>
+</section>
+<section id="a-fractal-in-python" class="slide level1">
+<h1>A Fractal in Python</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> turtle        <span class="co"># imports the turtle module</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>t <span class="op">=</span> turtle.Turtle()  <span class="co"># creates a turtle</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>t.forward(<span class="dv">100</span>)       <span class="co"># draws 100 pixels forward</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>t.left(<span class="dv">60</span>)           <span class="co"># turns left 60°</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>t.forward(<span class="dv">100</span>)       <span class="co"># draws 100 pixels forward</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>t.right(<span class="dv">120</span>)         <span class="co"># turns right 120°</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>t.forward(<span class="dv">100</span>)       <span class="co"># draws 100 pixels forward</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>t.left(<span class="dv">60</span>)           <span class="co"># turns left 60°</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>t.forward(<span class="dv">100</span>)       <span class="co"># draws 100 pixels forward</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>turtle.done()        <span class="co"># keeps the window open</span></span></code></pre></div>
+</section>
+<section id="the-best-way-to-learn-is-by-doing" class="slide level1">
+<h1>The Best Way to Learn is By Doing</h1>
+<ul>
+<li>See if you can change the Scratch project to draw your own shapes</li>
+<li>If you want to try Python, have a look at the examples</li>
+</ul>
 </section>
     </div>
   </div>
 
-  <script src="lib/reveal/js/reveal.js"></script>
+  <script src="./lib/reveal/js/reveal.js"></script>
 
   <script>
 
@@ -161,9 +204,9 @@ This is another bonus.
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'lib/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'lib/reveal/plugin/zoom-js/zoom.js', async: true },
-          { src: 'lib/reveal/plugin/notes/notes.js', async: true }
+          { src: './lib/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: './lib/reveal/plugin/zoom-js/zoom.js', async: true },
+          { src: './lib/reveal/plugin/notes/notes.js', async: true }
         ]
       });
     </script>
