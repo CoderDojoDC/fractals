@@ -1,6 +1,6 @@
 ---
 title: Fractals
-subtitle: Functions and Recusion in Scratch and Python
+subtitle: Functions and Recursion in Scratch and Python
 revealjs-url: ./lib/reveal
 theme: fractals
 transition: slide
